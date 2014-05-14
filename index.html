@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+
+<div class="container">
+    <div class="jumbotron clearfix">
+        <h1>Hi</h1>
+        <div>I think Javascript and iOS is really cool. If you do too, you might find something useful here.</div>
+    </div>
+</div>
+
+
+<div class="home content">
+    <div class="col-md-12 masonry-container">
+        <div class="masonry">
+            <div class="grid-sizer"></div>
+
+            {% for post in site.posts %}
+            <div class="item">
+                <div class="item-content">
+                    <div class="post-details">
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br>
+                        <small class="post-date">{{ post.date | date: "%b %-d, %Y" }}</small>
+                        <div class="post-summary-short">{{ post.short }}</div>
+                        <div class="post-summary-long" style="display: none;">{{ post.summary }}</div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="item">
+                <div class="item-content"></div>
+            </div>
+            <div class="item">
+                <div class="item-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
