@@ -1,4 +1,6 @@
-_site
+_site/
 node_modules/
-__bowercomponents
+__bowercomponents/
 .idea/
+.sass-cache/
+.DS_STORE
