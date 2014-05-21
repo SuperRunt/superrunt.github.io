@@ -14,7 +14,7 @@ Easily implemented by adding laterthan="{{fromDate}}" to the to-date form field 
 
 {% highlight html %}
 <input type="text" class="form-control date" readonly="true" ng-model="searchParams.fromDate" data-min-date="today" bs-datepicker required />
-<input type="text" class="form-control date" readonly="true" ng-model="searchParams.toDate" data-min-date="''{{'toMinDate'}}'" laterthan="'{{'searchParams.fromDate'}}'" changedclass="changeAlert" bs-datepicker required />
+<input type="text" class="form-control date" readonly="true" ng-model="searchParams.toDate" data-min-date="{ { toMinDate } }" laterthan="{ { searchParams.fromDate } }" changedclass="changeAlert" bs-datepicker required />
 {% endhighlight %}
 
 Bower install:
