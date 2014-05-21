@@ -1,6 +1,6 @@
 # Site settings
 name: SuperRunt
-title: Your awesome title
+title: ""
 email: superrunt@gmail.com
 description: "Nerd stuff, code, code samples, angular, javascript, iOS, jquery"
 baseurl: ""

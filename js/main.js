@@ -15,7 +15,7 @@ var transitionEndEvent = {
 }[ transitionProp ];
 
 $( function() {
-    if ( $('.masonry-container').width() <= 535 ) { console.log("get outta here"); return; }
+    if ( $('.masonry-container').width() <= 535 ) { return; }
 
     var $container = $('.masonry').masonry({
         itemSelector: '.item',
@@ -23,6 +23,9 @@ $( function() {
     });
 
     $container.on( 'click', '.item-content', function( event ) {
+
+        if ( $(event.target).hasClass("post-link") ) { return; }
+
         var $this = $(this);
 
         var previousContentSize = getSize( this );

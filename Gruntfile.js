@@ -37,7 +37,7 @@ module.exports = function(grunt) {
             },
             folders: {
                 files: {
-                    'fonts': ['fontawesome/fonts', 'bootstrap-css/fonts']
+                    'assets/fonts': ['fontawesome/fonts', 'bootstrap-css/fonts']
                 }
             }
         },
