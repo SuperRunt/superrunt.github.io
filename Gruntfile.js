@@ -62,7 +62,7 @@ module.exports = function(grunt) {
                     'js/libs/masonry.js',
                     'js/main.js'
                 ],
-                dest: 'assets/js/<%= filename %>.js'
+                dest: 'assets/javascript/<%= filename %>.js'
             }
         },
 
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
         strip: {
             main : {
                 src : '<%= concat.build.dest %>',
-                dest : 'assets/js/<%= filename %>.js',
+                dest : 'assets/javascript/<%= filename %>.js',
                 options: {
                     nodes: ['console.log', 'console.time', 'console.timeEnd', 'console.dir']
                 }
@@ -156,6 +156,7 @@ module.exports = function(grunt) {
                 options: {
                     sassDir: ['sass'],
                     cssDir: ['stylesheets'],
+                    fontsDir: ["fonts"],
                     environment: 'production'
                 }
             }
@@ -233,6 +234,6 @@ module.exports = function(grunt) {
     // Tasks
     grunt.registerTask('server', ['connect:server', 'open:server', 'watch']);
     grunt.registerTask('default', ['jshint', 'concat', 'compass:dev', 'concat_css']);
-    grunt.registerTask('release', ['bowercopy','jshint', 'concat', 'strip', 'uglify', 'sass:release', 'template:release', 'copy:release', 'bump']);
+    grunt.registerTask('release', ['jshint', 'concat', 'strip', 'uglify', 'compass:release', 'concat_css']);
 
 };
