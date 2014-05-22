@@ -3,7 +3,7 @@ name: SuperRunt
 title: ""
 email: superrunt@gmail.com
 description: "Nerd stuff, code, code samples, angular, javascript, iOS, jquery"
-baseurl: "superrunt.com"
+baseurl: ""
 url: "http://superrunt.com"
 
 # Build settings
