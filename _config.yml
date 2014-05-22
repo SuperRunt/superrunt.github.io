@@ -3,26 +3,16 @@ name: SuperRunt
 title: ""
 email: superrunt@gmail.com
 description: "Nerd stuff, code, code samples, angular, javascript, iOS, jquery"
-baseurl: ""
+baseurl: "http://superrunt.com"
 url: "http://superrunt.com"
 
 # Build settings
 markdown: kramdown
 permalinks: pretty
 
+safe: true
+lsi: false
+source: "superrunt"
+
 exclude: ['*.json', 'Gruntfile.js', 'config.rb', 'node_modules', 'sass', 'stylesheets', 'js', 'debug', 'production', 'vagrant']
 
-# Format defaults
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "stuff/"
-      type: "post"
-    values:
-      layout: "post" # overrides previous default layout
-#      author: "Me"
