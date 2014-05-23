@@ -13,5 +13,4 @@ permalinks: pretty
 safe: true
 lsi: false
 
-exclude: ['*.json', 'Gruntfile.js', 'config.rb', 'node_modules', 'sass', 'stylesheets', 'js', 'debug', 'production', 'vagrant']
-
+exclude: ['*.json', 'Gruntfile.js', 'config.rb', 'node_modules', 'sass', 'stylesheets', 'js', 'debug', 'production', 'vagrant', 'feed.xml']
