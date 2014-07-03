@@ -2,7 +2,7 @@
 layout: post
 title:  "Parse.com Cloud Code example"
 date:   2014-05-28 21:44:46
-categories: javascript parse.com
+categories: javascript parse
 short: "Parse Cloud Code let's you do the heavy lifting on the(ir) server side"
 summary: "Parse.com is a good option for storing and serving data in an app. Of course,
 you'll need more than just storage and delivery of data from an API, to avoid doing a lot of work in

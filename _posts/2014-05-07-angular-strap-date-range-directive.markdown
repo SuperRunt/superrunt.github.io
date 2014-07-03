@@ -21,3 +21,6 @@ Bower install:
 {% highlight bash %}
 bower install angular-strap-daterange
  {% endhighlight %}
+<br>
+<strong>Update 7/3/2014: The updated bower package (v1.1.3) supports angularjs v1.2.19 and angular-strap v2.0.3</strong><br>
+Angular-strap got some datepicker bugs taken care of, which caused my directive to break. This update fixes that.
