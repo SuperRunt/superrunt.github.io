@@ -36,7 +36,7 @@ If you were dealing with a typical CMS, now is when you have to start monkeying 
 etc etc. Not in Jekyll. There's no 'built in' stylesheets or javascript to work around, all the includes are in one folder and
 what happens on build is very predictable.
 
-To see if Jekyll could fit into my normal <b>workflow</> with vagrant and gruntjs, I spent a little time getting that set up (it was pretty easy!),
+To see if Jekyll could fit into my normal <b>workflow</b> with vagrant and gruntjs, I spent a little time getting that set up (it was pretty easy!),
 but for something simple as this blog you definitely do not need that. I have a vagrant box file over at
 [Github](https://github.com/SuperRunt/vagrant-grunt-jekyll), that could be a good starting point.
 
