@@ -30,7 +30,7 @@ view to be hidden or not, depending on if the view is already visible:
 {% highlight objc %}
 - (IBAction)typeButtonTouched:(id)sender
 {
-    [self dismissKeyboard];
+    [self dismissKeyboard];  // no need for a keyboard!
     typePickerShouldOpen = !typePickerShouldOpen;
 
     [self.tableView beginUpdates];
@@ -62,4 +62,4 @@ view:
 }
 {% endhighlight %}
 
-And that's it!
+And that's it! The picker cell now slides open and closed when you tap the button.
