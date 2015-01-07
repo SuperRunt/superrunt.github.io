@@ -14,7 +14,7 @@ picker view slides into view. Here's how I solved it:
 <h2>Add cell to table in storyboard</h2>
 
 Add a UITableViewCell below the cell that displays whatever the current option is. Place a UIPickerView in
-the table cell. The picker view should be pinned to teh sides and top of the content view. I think the fastest
+the table cell. The picker view should be pinned to the sides and top of the content view. I think the fastest
 way of doing that is to select the picker view, go to Editor->Pin and choose appropriately there. It's
 also important to set the table view cell row height to 0:<br>
 <img width="190" src="/assets/img/posts/table_cell_settings.png"><br>
@@ -45,7 +45,7 @@ view to be hidden or not, depending on if the view is already visible:
 }
 {% endhighlight %}
 
-You throw this in between beginUpdates and enUpdates. This is so the table gets re-rendered, which in turn triggers the
+You throw this in between beginUpdates and enUpdates. This causes the table to re-render, which in turn triggers the
 height to be checked. We'll take advantage of this to change the height of the table cell that contains the picker
 view:
 {% highlight objc %}
